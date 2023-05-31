@@ -9,7 +9,7 @@ Before getting started, make sure you have a proper Zephyr development environme
 Clone the repository to a folder of your liking:
 
 ```shell
-git clone https://github.com/borrelunde/zephyr-manifest-workspace-application.git workspace-app-name
+git clone https://github.com/borrelunde/zephyr-cpp-synchronization-app-sample workspace-app-name
 ```
 
 Enter the workspace, activate the West virtual environment and update Zephyr modules:
