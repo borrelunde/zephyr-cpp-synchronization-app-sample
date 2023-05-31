@@ -1,0 +1,4 @@
+[manifest]
+path = application
+[zephyr]
+base = deps/zephyr
