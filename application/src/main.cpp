@@ -28,7 +28,7 @@ void coop_thread_loop() {
 
         LOG_INF("%s", __FUNCTION__);
 
-        // Wait a while, then let main thread have a turn.
+        // Wait a while, then let coop thread have a turn.
         k_timer_start(&timer, K_MSEC(SLEEPTIME), K_NO_WAIT);
         k_timer_status_sync(&timer);
         main_semaphore.give();
