@@ -3,13 +3,12 @@
 #include <zephyr/kernel.h>
 
 class Semaphore {
-   protected:
+   private:
     struct k_sem internal_semaphore;
 
    public:
     Semaphore();
     ~Semaphore();
     const int wait();
-    const int wait(int timeout);
     void give();
 };

@@ -19,11 +19,6 @@ const int Semaphore::wait() {
     return 1;
 }
 
-const int Semaphore::wait(int timeout) {
-    LOG_DBG("%s", __FUNCTION__);
-    return k_sem_take(&internal_semaphore, K_MSEC(timeout));
-}
-
 void Semaphore::give() {
     LOG_DBG("%s", __FUNCTION__);
     k_sem_give(&internal_semaphore);
