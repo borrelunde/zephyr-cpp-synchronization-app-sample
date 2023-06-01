@@ -5,7 +5,7 @@
 
 LOG_MODULE_REGISTER(main, LOG_LEVEL_DBG);
 
-// Delay between greetings in milliseconds.
+// Time between thread messages in milliseconds.
 #define SLEEPTIME 1000
 #define STACKSIZE 2000
 
